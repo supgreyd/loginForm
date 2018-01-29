@@ -1,0 +1,87 @@
+@import "variables";
+@import "reset.css";
+
+body{
+  background-color: $bg-color;
+}
+form{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a{
+    color: #9f9f9f;
+  }
+  header{
+    i{
+      background-color: #cdcdcd;
+      border-radius: 50%;
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      margin-right: 10px;
+    }
+    div{
+      display: inline-block;
+      vertical-align: top;
+      h1{
+        color: #005993;
+        font-size: 2.2rem;
+        font-weight:bold;
+      }
+      h2{
+        color: #125e8a;
+        font-size: 1.22rem;
+        font-weight: bold;
+      }
+    }
+  }
+  main {
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+    width: 300px;
+    display: block;
+    margin: 15px auto;
+    box-shadow: 0 1px 6px grey;
+    transition: box-shadow .3s;
+    &:hover{
+      box-shadow: 0 1px 30px grey;
+    }
+    input {
+      outline: none;
+      &[type = text],
+      &[type = password] {
+        display: block;
+        width: 100%;
+        height: 30px;
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 1px solid #f0f0f0;
+      }
+      &[type = submit] {
+        background-color: #e15290;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    a{
+      position: relative;
+      float: right;
+      top: 10px;
+    }
+  }
+  footer{
+    p{
+      color: #9f9f9f;
+    }
+  }
+}
